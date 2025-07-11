@@ -8,7 +8,7 @@ public class StudentManager {
 
   public Student find(long studentID) throws StudentExeption{
     if (Student.getValueOf(studentID) == null) {
-      throw new StudentExeption("Could not find student with ID" + " {" + studentID + "}");
+      throw new StudentExeption("Could not find student with ID" + " " + studentID);
     }
     return Student.getValueOf(studentID);
   
